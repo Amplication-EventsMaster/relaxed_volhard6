@@ -9,6 +9,10 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
+import { FdsfList } from "./fdsf/FdsfList";
+import { FdsfCreate } from "./fdsf/FdsfCreate";
+import { FdsfEdit } from "./fdsf/FdsfEdit";
+import { FdsfShow } from "./fdsf/FdsfShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -41,6 +45,13 @@ const App = (): React.ReactElement => {
           edit={UserEdit}
           create={UserCreate}
           show={UserShow}
+        />
+        <Resource
+          name="Fdsf"
+          list={FdsfList}
+          edit={FdsfEdit}
+          create={FdsfCreate}
+          show={FdsfShow}
         />
       </Admin>
     </div>
